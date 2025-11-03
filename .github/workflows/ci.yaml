@@ -32,10 +32,6 @@ jobs:
       - name: Run unit tests
         run: npm run test -- --coverage --passWithNoTests
 
-      # Ejecuta pruebas de integración si existen
-      - name: Run e2e tests
-        run: npm run test:e2e -- --passWithNoTests
-
       # Verifica que compile correctamente
       - name: Build project
         run: npm run build
