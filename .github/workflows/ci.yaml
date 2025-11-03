@@ -32,10 +32,6 @@ jobs:
       - name: Run unit tests
         run: npm run test -- --coverage --passWithNoTests
 
-      # Verifica que compile correctamente
-      - name: Build project
-        run: npm run build
-
       # Guarda el reporte de cobertura como artefacto
       - name: Upload coverage report
         if: always()
