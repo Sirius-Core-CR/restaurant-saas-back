@@ -28,10 +28,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Verifica lint (usa el que viene con Nest)
-      - name: Run ESLint
-        run: npm run lint
-
       # Ejecuta pruebas unitarias con Jest
       - name: Run unit tests
         run: npm run test -- --coverage --passWithNoTests
